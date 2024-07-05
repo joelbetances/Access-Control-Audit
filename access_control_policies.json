@@ -1,0 +1,19 @@
+{
+  "policies": [
+    {
+      "department": "Finance",
+      "required_permissions": ["read_financial_reports", "write_financial_reports"],
+      "restricted_permissions": ["access_hr_data", "access_it_systems"]
+    },
+    {
+      "department": "HR",
+      "required_permissions": ["read_employee_data", "write_employee_data"],
+      "restricted_permissions": ["access_financial_reports", "access_it_systems"]
+    },
+    {
+      "department": "IT",
+      "required_permissions": ["access_it_systems", "manage_it_infrastructure"],
+      "restricted_permissions": ["access_financial_reports", "read_employee_data"]
+    }
+  ]
+}
